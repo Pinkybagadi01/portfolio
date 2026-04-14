@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pinky Bagadi | Advocate</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #0d1b2a, #1b263b);
+    color: white;
+}
+
+/* HEADER */
+header {
+    text-align: center;
+    padding: 70px 20px;
+}
+
+header img {
+    width: 90px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    margin: 10px 0;
+}
+
+/* TYPING TEXT */
+.typing {
+    font-size: 18px;
+    border-right: 2px solid white;
+    display: inline-block;
+    padding-right: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+/* BUTTON */
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #fca311;
+    color: black;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #ffd166;
+    transform: scale(1.05);
+}
+
+/* CARD */
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+.card {
+    background: rgba(255,255,255,0.08);
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+/* SKILLS */
+.skills span {
+    display: inline-block;
+    background: #fca311;
+    color: black;
+    padding: 6px 12px;
+    margin: 5px;
+    border-radius: 20px;
+}
+
+/* IMAGES */
+.images {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.images img {
+    width: 100px;
+    margin: 10px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    opacity: 0.7;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <img src="logo.webp">
+    <h1>Pinky Bagadi</h1>
+
+    <!-- Typing Effect -->
+    <p class="typing" id="typing"></p>
+
+    <!-- CV Button -->
+    <br>
+    <a href="cv.pdf" download class="btn">Download CV</a>
+</header>
+
+<div class="container">
+
+<div class="card">
+<h2>About</h2>
+<p>
+Practicing Advocate based in Mumbai with expertise in family law,
+civil & criminal matters, and human rights.
+</p>
+</div>
+
+<div class="card">
+<h2>Experience</h2>
+<p><b>Advocate – Family Court</b></p>
+<p><b>Legal Assistant – Human Rights Commission</b></p>
+<p><b>In-House Counsel</b></p>
+</div>
+
+<div class="card">
+<h2>Skills</h2>
+<div class="skills">
+<span>Legal Drafting</span>
+<span>Family Law</span>
+<span>Corporate Compliance</span>
+<span>Civil Law</span>
+</div>
+</div>
+
+<div class="card">
+<h2>Contact</h2>
+<p>📍 Mumbai</p>
+<p>📞 +91 9326712374</p>
+<p>✉️ bagadipinky2@gmail.com</p>
+</div>
+
+<div class="images">
+    <img src="justice1.webp">
+    <img src="justice2.webp">
+</div>
+
+</div>
+
+<footer>
+© 2026 Pinky Bagadi
+</footer>
+
+<script>
+// TYPING EFFECT
+const text = "Advocate | Family Law | Human Rights";
+let i = 0;
+
+function typing() {
+    if (i < text.length) {
+        document.getElementById("typing").innerHTML += text.charAt(i);
+        i++;
+        setTimeout(typing, 50);
+    }
+}
+
+typing();
+</script>
+
+</body>
+</html>
